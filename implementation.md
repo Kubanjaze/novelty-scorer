@@ -39,3 +39,8 @@ Outputs: novelty_scores.json
 | Est. cost | $0.0020 |
 
 Key finding: All compounds scored low novelty (2/10) — Claude correctly identified that simple acrylamide-aniline scaffolds are well-established in CETP inhibitor prior art. The minimal halogen substitutions (F/Cl/Br) do not provide meaningful novelty vs known CETPi.
+
+## Risks (resolved)
+- Claude's prior art knowledge may be outdated — referenced correct known CETPi drugs (anacetrapib, torcetrapib)
+- Novelty scores may be uniformly low for structurally simple compounds — confirmed (all 2/10 for acrylamide-anilines)
+- No access to actual patent databases — scoring based on Claude's training data knowledge only
